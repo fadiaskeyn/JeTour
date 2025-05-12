@@ -35,7 +35,7 @@ Route::middleware(['auth', 'verified'])->prefix('admin')->name('admin.')->group(
     Route::get('/kuliner/create', [KulinerController::class, 'create'])->name('kuliner.create');
     Route::post('/kuliner', [KulinerController::class, 'store'])->name('kuliner.store');
     Route::get('/kuliner/{kuliner}/edit', [KulinerController::class, 'edit'])->name('kuliner.edit');
-    Route::put('/kuliner/{kuliner}', [KulinerController::class, 'update'])->name('kuliner.update');
+    Route::put('/kuliner/{kzuliner}', [KulinerController::class, 'update'])->name('kuliner.update');
     Route::delete('/kuliner/{kuliner}', [KulinerController::class, 'destroy'])->name('kuliner.destroy');
     Route::get('/penginapan', [PenginapanController::class, 'index'])->name('penginapan.index');
     Route::get('/penginapan/create', [PenginapanController::class, 'create'])->name('penginapan.create');
