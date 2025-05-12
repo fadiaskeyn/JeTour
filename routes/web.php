@@ -6,6 +6,7 @@ use App\Http\Controllers\DestinationController;
 use App\Http\Controllers\CulinaryController;
 use App\Http\Controllers\KulinerController;
 use App\Http\Controllers\PenginapanController;
+use App\Models\Destination;
 use Illuminate\Support\Facades\Route;
 
 
@@ -48,7 +49,7 @@ Route::middleware(['auth', 'verified'])->prefix('admin')->name('admin.')->group(
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', function () {
         // Dummy data, ganti dengan query ke database jika sudah ada
-        $totalWisata = 40;
+        $totalWisata = Destination::count();
         $totalPengunjung = 50;
         $pengunjungAktif = 60;
         return view('admin.dashboard.dashboard', compact('totalWisata', 'totalPengunjung', 'pengunjungAktif'));
