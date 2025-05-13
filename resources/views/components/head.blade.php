@@ -10,5 +10,6 @@
 
     <script src="{{ asset('assets/js/pannellum.js') }}"></script>
     <link rel="shortcut icon" href="{{ asset('assets/images/logo-footer.png') }}" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 

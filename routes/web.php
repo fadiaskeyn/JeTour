@@ -7,6 +7,7 @@ use App\Http\Controllers\CulinaryController;
 use App\Http\Controllers\KulinerController;
 use App\Http\Controllers\PenginapanController;
 use App\Models\Destination;
+use App\Models\Transactions;
 use Illuminate\Support\Facades\Route;
 
 
@@ -50,8 +51,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/dashboard', function () {
         // Dummy data, ganti dengan query ke database jika sudah ada
         $totalWisata = Destination::count();
-        $totalPengunjung = 50;
-        $pengunjungAktif = 60;
+        $totalPengunjung = Transactions::count();;
+        $pengunjungAktif = 100;
         return view('admin.dashboard.dashboard', compact('totalWisata', 'totalPengunjung', 'pengunjungAktif'));
     })->name('dashboard');
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -61,7 +62,7 @@ Route::middleware('auth')->group(function () {
 
  //Route::resource('destination', DestinationController::class);
 
-Route::get('/admin/dashboard', [AdminController::class, 'index'])->name('dashboard.index');
+// Route::get('/admin/dashboard', [AdminController::class, 'index'])->name('dashboard.index');
 
 require __DIR__ . '/auth.php';
 
