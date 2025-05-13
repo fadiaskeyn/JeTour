@@ -11,7 +11,7 @@
             <li>
                 <a href="{{ route('dashboard') }}"
                     class="relative flex flex-row items-center h-11 focus:outline-none 
-                    {{ Request::routeIs('dashboard') ? 'bg-indigo-50 text-indigo-700 border-indigo-500' : 'hover:bg-gray-50 text-gray-600 hover:text-gray-800' }}
+                    {{ Request::routeIs('dashboard') ? 'bg-emerald-50 text-emerald-700 border-emerald-500' : 'hover:bg-gray-50 text-gray-600 hover:text-gray-800' }}
                         border-l-4 border-transparent pr-6">
                     <span class="inline-flex justify-center items-center ml-4">
                         <i class="fa-solid fa-gauge-high"></i>
@@ -22,7 +22,7 @@
             <li>
                 <a href="{{ route('admin.destination.index') }}"
                     class="relative flex flex-row items-center h-11 focus:outline-none 
-                    {{ Request::routeIs('admin.destination.index') ? 'bg-indigo-50 text-indigo-700 border-indigo-500' : 'hover:bg-gray-50 text-gray-600 hover:text-gray-800' }}
+                    {{ Request::routeIs('admin.destination.index') ? 'bg-emerald-50 text-emerald-700 border-emerald-500' : 'hover:bg-gray-50 text-gray-600 hover:text-gray-800' }}
                         border-l-4 border-transparent pr-6">
                     <span class="inline-flex justify-center items-center ml-4">
                         <i class="fa-solid fa-mountain-sun"></i>
@@ -33,7 +33,7 @@
             <li>
                 <a href="#"
                     class="relative flex flex-row items-center h-11 focus:outline-none 
-                    {{ Request::routeIs('transakasi') ? 'bg-indigo-50 text-indigo-700 border-indigo-500' : 'hover:bg-gray-50 text-gray-600 hover:text-gray-800' }}
+                    {{ Request::routeIs('transakasi') ? 'bg-emerald-50 text-emerald-700 border-emerald-500' : 'hover:bg-gray-50 text-gray-600 hover:text-gray-800' }}
                         border-l-4 border-transparent pr-6">
                     <span class="inline-flex justify-center items-center ml-4">
                         <i class="fa-solid fa-money-bill-wave"></i>
@@ -44,7 +44,7 @@
             <li>
                 <a href="{{ route('admin.kuliner.index') }}"
                     class="relative flex flex-row items-center h-11 focus:outline-none 
-                    {{ Request::routeIs('admin.kuliner.index') ? 'bg-indigo-50 text-indigo-700 border-indigo-500' : 'hover:bg-gray-50 text-gray-600 hover:text-gray-800' }}
+                    {{ Request::routeIs('admin.kuliner.index') ? 'bg-emerald-50 text-emerald-700 border-emerald-500' : 'hover:bg-gray-50 text-gray-600 hover:text-gray-800' }}
                         border-l-4 border-transparent pr-6">
                     <span class="inline-flex justify-center items-center ml-4">
                         <i class="fa-solid fa-utensils"></i>
@@ -55,7 +55,7 @@
             <li>
                 <a href="#"
                     class="relative flex flex-row items-center h-11 focus:outline-none 
-                    {{ Request::routeIs('tiket') ? 'bg-indigo-50 text-indigo-700 border-indigo-500' : 'hover:bg-gray-50 text-gray-600 hover:text-gray-800' }}
+                    {{ Request::routeIs('#') ? 'bg-emerald-50 text-emerald-700 border-emerald-500' : 'hover:bg-gray-50 text-gray-600 hover:text-gray-800' }}
                         border-l-4 border-transparent pr-6">
                     <span class="inline-flex justify-center items-center ml-4">
                         <i class="fa-solid fa-ticket"></i>
@@ -66,7 +66,7 @@
             <li>
                 <a href="{{ route('admin.penginapan.index') }}"
                     class="relative flex flex-row items-center h-11 focus:outline-none 
-                    {{ Request::routeIs('admin.penginapan.*') ? 'bg-indigo-50 text-indigo-700 border-indigo-500' : 'hover:bg-gray-50 text-gray-600 hover:text-gray-800' }}
+                    {{ Request::routeIs('admin.penginapan.*') ? 'bg-emerald-50 text-emerald-700 border-emerald-500' : 'hover:bg-gray-50 text-gray-600 hover:text-gray-800' }}
                         border-l-4 border-transparent pr-6">
                     <span class="inline-flex justify-center items-center ml-4">
                         <i class="fa-solid fa-hotel"></i>
@@ -83,7 +83,7 @@
             <li>
                 <a href="#"
                     class="relative flex flex-row items-center h-11 focus:outline-none 
-                    {{ Request::routeIs('datauser') ? 'bg-indigo-50 text-indigo-700 border-indigo-500' : 'hover:bg-gray-50 text-gray-600 hover:text-gray-800' }}
+                    {{ Request::routeIs('datauser') ? 'bg-emerald-50 text-emerald-700 border-emerald-500' : 'hover:bg-gray-50 text-gray-600 hover:text-gray-800' }}
                         border-l-4 border-transparent pr-6">
                     <span class="inline-flex justify-center items-center ml-4">
                         <i class="fa-solid fa-users-gear"></i>
