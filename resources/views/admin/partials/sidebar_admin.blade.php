@@ -66,7 +66,7 @@
             <li>
                 <a href="{{ route('admin.penginapan.index') }}"
                     class="relative flex flex-row items-center h-11 focus:outline-none 
-                    {{ Request::routeIs('admin.penginapan.index') ? 'bg-indigo-50 text-indigo-700 border-indigo-500' : 'hover:bg-gray-50 text-gray-600 hover:text-gray-800' }}
+                    {{ Request::routeIs('admin.penginapan.*') ? 'bg-indigo-50 text-indigo-700 border-indigo-500' : 'hover:bg-gray-50 text-gray-600 hover:text-gray-800' }}
                         border-l-4 border-transparent pr-6">
                     <span class="inline-flex justify-center items-center ml-4">
                         <i class="fa-solid fa-hotel"></i>
