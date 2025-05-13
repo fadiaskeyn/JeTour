@@ -1,9 +1,9 @@
 <x-layout>
     <div class="w-full p-4 sm:p-6 bg-gray-50 min-h-screen">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 font-poppins">
             <!-- Card 1 -->
             <div
-                class="rounded-2xl shadow-lg bg-gradient-to-br from-red-300 to-red-400 p-6 flex flex-col justify-between min-h-[150px]">
+                class="  mb-4 rounded-2xl shadow-lg bg-gradient-to-br from-red-300 to-red-400 p-6 flex flex-col justify-between min-h-[150px]">
                 <div class="flex justify-between items-center">
                     <div>
                         <div class="text-lg font-semibold text-white/90">Total Wisata</div>
@@ -16,7 +16,7 @@
             </div>
             <!-- Card 2 -->
             <div
-                class="rounded-2xl shadow-lg bg-gradient-to-br from-green-300 to-green-400 p-6 flex flex-col justify-between min-h-[150px]">
+                class="mb-4 rounded-2xl shadow-lg bg-gradient-to-br from-green-300 to-green-400 p-6 flex flex-col justify-between min-h-[150px]">
                 <div class="flex justify-between items-center">
                     <div>
                         <div class="text-lg font-semibold text-white/90">Total Pengunjung</div>
@@ -29,48 +29,72 @@
             </div>
             <!-- Card 3 -->
             <div
-                class="rounded-2xl shadow-lg bg-gradient-to-br from-blue-300 to-blue-400 p-6 flex flex-col justify-between min-h-[150px]">
+                class="mb-4 rounded-2xl shadow-lg bg-gradient-to-br from-blue-300 to-blue-400 p-6 flex flex-col justify-between min-h-[150px]">
                 <div class="flex justify-between items-center">
                     <div>
-                        <div class="text-lg font-semibold text-white/90">Pengunjung Aktif</div>
+                        <div class="text-lg font-semibold text-white/90">Total Kuliner</div>
                         <div class="text-4xl font-bold text-white mt-2">{{ $pengunjungAktif ?? 0 }}</div>
                     </div>
                     <div class="text-5xl text-white/60">
-                        <i class="fas fa-bolt"></i>
+                        <i class="fa-solid fa-utensils"></i>
                     </div>
                 </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {{-- Card 1 --}}
-                <div class="max-w-xs rounded overflow-hidden shadow-lg bg-white">
-                    <img class="w-full h-48 object-cover" src="https://source.unsplash.com/400x300/?beach"
-                        alt="Pantai">
-                    <div class="px-4 py-3">
-                        <h2 class="font-bold text-lg text-gray-800">Pantai Kuta</h2>
-                        <p class="text-sm text-gray-600 mt-1">Destinasi wisata populer di Bali.</p>
-                    </div>
-                </div>
+        </div>
+        <div class="bg-white rounded-md p-4 mt-4">
+            <p class="text-xl text-gray-600 mb-4 font-poppins">Tempat populer wisata</p>
 
-                {{-- Card 2 --}}
-                <div class="max-w-xs rounded overflow-hidden shadow-lg bg-white">
-                    <img class="w-full h-48 object-cover" src="https://source.unsplash.com/400x300/?mountain"
-                        alt="Gunung">
-                    <div class="px-4 py-3">
-                        <h2 class="font-bold text-lg text-gray-800">Gunung Bromo</h2>
-                        <p class="text-sm text-gray-600 mt-1">Wisata alam dengan sunrise spektakuler.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- card ye-->
+                <div class="rounded-xl overflow-hidden">
+                    <img src="https://storage.googleapis.com/a1aa/image/ae85c8a6-321d-4528-bcb5-1f825a6f6b20.jpg"
+                        alt="Pantai Papuma" class="w-full h-24 sm:h-28 object-cover rounded-t-xl" />
+                    <div class="bg-[#e8f0fe] rounded-b-xl px-3 py-2">
+                        <h3 class="font-semibold text-black text-sm leading-tight">Pantai Papuma</h3>
+                        <p class="text-xs text-gray-500 flex items-center space-x-1">
+                            <i class="fas fa-map-marker-alt text-xs"></i>
+                            <span>Ambulu</span>
+                        </p>
                     </div>
                 </div>
-
-                {{-- Card 3 --}}
-                <div class="max-w-xs rounded overflow-hidden shadow-lg bg-white">
-                    <img class="w-full h-48 object-cover" src="https://source.unsplash.com/400x300/?temple"
-                        alt="Candi">
-                    <div class="px-4 py-3">
-                        <h2 class="font-bold text-lg text-gray-800">Candi Borobudur</h2>
-                        <p class="text-sm text-gray-600 mt-1">Candi Budha terbesar di dunia.</p>
+                <!-- card ye-->
+                <div class="rounded-xl overflow-hidden">
+                    <img src="https://storage.googleapis.com/a1aa/image/ae85c8a6-321d-4528-bcb5-1f825a6f6b20.jpg"
+                        alt="Pantai Papuma" class="w-full h-24 sm:h-28 object-cover rounded-t-xl" />
+                    <div class="bg-[#e8f0fe] rounded-b-xl px-3 py-2">
+                        <h3 class="font-semibold text-black text-sm leading-tight">Pantai Papuma</h3>
+                        <p class="text-xs text-gray-500 flex items-center space-x-1">
+                            <i class="fas fa-map-marker-alt text-xs"></i>
+                            <span>Ambulu</span>
+                        </p>
                     </div>
                 </div>
-            </div>  
+                <!-- card ye-->
+                <div class="rounded-xl overflow-hidden">
+                    <img src="https://storage.googleapis.com/a1aa/image/ae85c8a6-321d-4528-bcb5-1f825a6f6b20.jpg"
+                        alt="Pantai Papuma" class="w-full h-24 sm:h-28 object-cover rounded-t-xl" />
+                    <div class="bg-[#e8f0fe] rounded-b-xl px-3 py-2">
+                        <h3 class="font-semibold text-black text-sm leading-tight">Pantai Papuma</h3>
+                        <p class="text-xs text-gray-500 flex items-center space-x-1">
+                            <i class="fas fa-map-marker-alt text-xs"></i>
+                            <span> Ambulu</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- card ye-->
+                <div class="rounded-xl overflow-hidden">
+                    <img src="https://storage.googleapis.com/a1aa/image/ae85c8a6-321d-4528-bcb5-1f825a6f6b20.jpg"
+                        alt="Pantai Papuma" class="w-full h-24 sm:h-28 object-cover rounded-t-xl" />
+                    <div class="bg-[#e8f0fe] rounded-b-xl px-3 py-2">
+                        <h3 class="font-semibold text-black text-sm leading-tight">Pantai Papuma</h3>
+                        <p class="text-xs text-gray-500 flex items-center space-x-1">
+                            <i class="fas fa-map-marker-alt text-xs"></i>
+                            <span>Ambulu</span>
+                        </p>
+                    </div>
+                </div>
+                {{-- end card --}}
+            </div>
         </div>
     </div>
 </x-layout>
