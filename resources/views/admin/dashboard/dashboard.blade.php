@@ -41,7 +41,7 @@
                 </div>
             </div>
         </div>
-        <div class="bg-white rounded-md p-4 mt-4">
+        <div class="bg-white rounded-md p-4 mt-4 shadow-lg">
             <p class="text-xl text-gray-600 mb-4 font-poppins">Tempat populer wisata</p>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -94,6 +94,68 @@
                     </div>
                 </div>
                 {{-- end card --}}
+            </div>
+        </div>
+        <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg mt-8">
+            <div class="p-6 text-gray-900">
+                <p class="text-xl text-gray-600 mb-4 font-poppins">Aktivitas terbaru</p>
+
+                <!-- Table -->
+                <div class="overflow-x-auto bg-white rounded-lg w-full">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-teal-600 text-white">
+                            <tr>
+                                <th scope="col" class="py-3 px-4 sm:px-6 text-left">
+                                    Nama Pengunjung
+                                </th>
+                                <th scope="col" class="py-3 px-4 sm:px-6 text-left">
+                                    Nama Tiket
+                                </th>
+                                <th scope="col" class="py-3 px-4 sm:px-6 text-left">
+                                    Lokasi
+                                </th>
+                                <th scope="col" class="py-3 px-4 sm:px-6 text-left">
+                                    Total Harga
+                                </th>
+                                <th scope="col" class="py-3 px-4 sm:px-6 text-left text-center">
+                                    Status 
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            {{-- @foreach ($penginapans as $penginapan) --}}
+                                <tr class="bg-white hover:bg-gray-100 transition-colors">
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="text-sm font-medium text-gray-900">fgfdgdfg</div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="text-sm text-gray-900">tgyerter</div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="text-sm text-gray-900">rtgert</div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="text-sm text-gray-900">Rp
+                                            retret</div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-center">
+                                        <a href=""
+                                            class="text-white bg-orange-400 hover:bg-orange-500 focus:ring-4 focus:ring-orange-400 font-medium rounded text-sm px-3 py-1.5 focus:outline-none">
+                                            <i class="fa-solid fa-pencil"></i> Ubah
+                                        </a>
+
+                                        <a href="" class="mx-2"> </a>                                            
+                                    </td>
+                                </tr>
+                            {{-- @endforeach --}}
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Pagination -->
+                <div class="mt-4">
+                    {{-- {{ $penginapans->links() }} --}}
+                </div>
             </div>
         </div>
     </div>
