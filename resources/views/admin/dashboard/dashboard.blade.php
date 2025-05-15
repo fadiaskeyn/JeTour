@@ -96,7 +96,7 @@
                 {{-- end card --}}
             </div>
         </div>
-        <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg mt-8">
+        <div class="bg-white overflow-hidden shadow-lg sm:rounded-lg mt-8">
             <div class="p-6 text-gray-900">
                 <p class="text-xl text-gray-600 mb-4 font-poppins">Aktivitas terbaru</p>
 
@@ -139,12 +139,9 @@
                                             retret</div>
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-center">
-                                        <a href=""
-                                            class="text-white bg-orange-400 hover:bg-orange-500 focus:ring-4 focus:ring-orange-400 font-medium rounded text-sm px-3 py-1.5 focus:outline-none">
-                                            <i class="fa-solid fa-pencil"></i> Ubah
-                                        </a>
-
-                                        <a href="" class="mx-2"> </a>                                            
+                                        <div class="text-white bg-green-400 hover:bg-green-500 focus:ring-4 focus:ring-green-400 font-medium rounded text-sm px-3 py-1.5 focus:outline-none">
+                                            <i class="fa-solid fa-circle-check"></i> Selesai
+                                        </div>                                           
                                     </td>
                                 </tr>
                             {{-- @endforeach --}}
